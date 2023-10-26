@@ -8,9 +8,9 @@
         android:icon="@drawable/ic_home"/>
     <item
 
-        android:title="Notification"
+        android:title="Detail"
         android:id="@+id/nav_notif"
-        android:icon="@drawable/ic_notif"/>
+        android:icon="@drawable/ic_detail"/>
     <item
 
         android:title="Profile"
