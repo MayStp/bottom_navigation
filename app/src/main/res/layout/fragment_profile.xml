@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile">
+    tools:context=".profile"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#D6BD70"
-        android:gravity="center"
-        android:text="profile"
-        android:textSize="25dp" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:text="Welcome, "/>
+
+        <TextView
+            android:id="@+id/getusername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="username"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp"
+            android:textColor="#FF9800"
+            app:layout_constraintStart_toEndOf="@+id/welcome" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>
